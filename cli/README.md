@@ -29,7 +29,8 @@ New wallet address: 	EQCT_qPaCo4I_F09ub2dJth5ppIJVQxZdaGoMh_jfU1qe4Gm
 
 ## Mint TON20
 
-```> python ton20cli.py mint --help
+```
+> python ton20cli.py mint --help
 
 usage: ton20cli.py [-h] (--amount AMOUNT | --amount-nano AMOUNT_NANO)
                    [--tick TICK] [--repeat REPEAT] [--msgs MSGS]
@@ -65,7 +66,8 @@ Where:
 
 Example:
 
-```> python ton20cli.py mint --tick grum --amount 1234 --mnemo-file wallet.txt --repeat 10000
+```
+> python ton20cli.py mint --tick grum --amount 1234 --mnemo-file wallet.txt --repeat 10000
 
 Wallet: EQCT_qPaCo4I_F09ub2dJth5ppIJVQxZdaGoMh_jfU1qe4Gm
 Sending 3 transaction(s) with 4 message(s) each
@@ -77,7 +79,8 @@ Sent tx 3 with seqno 9
 
 ## Transfer TON20
 
-```> python ton20cli.py transfer --help
+```
+> python ton20cli.py transfer --help
 
 usage: ton20cli.py [-h] (--amount AMOUNT | --amount-nano AMOUNT_NANO)
                    [--tick TICK] --to TO
@@ -107,14 +110,16 @@ optional arguments:
 
 Example:
 
-```> python ton20cli.py transfer --tick grum --amount 12345 --to UQDc4RBidUBLRYeGhSGoNzoxBkMJCCq-o6prwZW-PboQVu7P --mnemo-file wallet.txt
+```
+> python ton20cli.py transfer --tick grum --amount 12345 --to UQDc4RBidUBLRYeGhSGoNzoxBkMJCCq-o6prwZW-PboQVu7P --mnemo-file wallet.txt
 
 Sent transfer tx
 ```
 
 ## Query TON20 Balance
 
-```> python ton20cli.py balance --help
+```
+> python ton20cli.py balance --help
 
 usage: ton20cli.py [-h] [--tick TICK] [--mnemo MNEMO]
                    [--mnemo-file MNEMO_FILE] [--wallet-type WALLET_TYPE]
@@ -140,19 +145,22 @@ optional arguments:
 
 Examples:
 
-```> python ton20cli.py balance --tick grum --mnemo-file wallet.txt
+```
+> python ton20cli.py balance --tick grum --mnemo-file wallet.txt
 
 Balance: 44424.0 grum (44424000000000 nanogrum)
 ```
 
-```> python ton20cli.py balance --tick nano --address UQDc4RBidUBLRYeGhSGoNzoxBkMJCCq-o6prwZW-PboQVu7P
+```
+> python ton20cli.py balance --tick nano --address UQDc4RBidUBLRYeGhSGoNzoxBkMJCCq-o6prwZW-PboQVu7P
 
 Balance: 501.0 nano (501000000000 nanonano) 
 ```
 
 ## Deploy TON20
 
-```> python ton20cli.py deploy --help
+```
+> python ton20cli.py deploy --help
 
 usage: ton20cli.py [-h] --tick TICK
                    (--supply SUPPLY | --supply-nano SUPPLY_NANO)
@@ -185,7 +193,8 @@ optional arguments:
 
 Example:
 
-```> python ton20cli.py deploy --tick github.com/grumpy-ton/ton20 --supply 102030 --one-mint 10203 --mnemo-file wallet.txt
+```
+> python ton20cli.py deploy --tick github.com/grumpy-ton/ton20 --supply 102030 --one-mint 10203 --mnemo-file wallet.txt
 
 Sent deploy tx
 ```
